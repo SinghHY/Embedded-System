@@ -1,0 +1,28 @@
+08:23:46 **** Incremental Build of configuration Debug for project Queue_test ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -o "Queue_test.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\GitRepo\Embedded-System\workspace\Queue_test\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Queue_test.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Queue_test.elf
+ 
+arm-none-eabi-size   Queue_test.elf 
+arm-none-eabi-objdump -h -S  Queue_test.elf  > "Queue_test.list"
+   text	   data	    bss	    dec	    hex	filename
+   6304	    116	   1988	   8408	   20d8	Queue_test.elf
+Finished building: default.size.stdout
+ 
+Finished building: Queue_test.list
+ 
+08:24:13 **** Incremental Build of configuration Debug for project Queue_test ****
+make -j4 all 
+arm-none-eabi-size   Queue_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6304	    116	   1988	   8408	   20d8	Queue_test.elf
+Finished building: default.size.stdout
+ 
+08:30:28 **** Incremental Build of configuration Debug for project Queue_test ****
+make -j4 all 
+arm-none-eabi-size   Queue_test.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6304	    116	   1988	   8408	   20d8	Queue_test.elf
+Finished building: default.size.stdout
+ 
